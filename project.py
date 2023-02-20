@@ -72,7 +72,7 @@ class Blackjack:
                     self.player.add_card(self.deck.deal())
                     print(f"Your hand: {[card.rank for card in self.player.hand]}")
                     if self.player.hand_value() == 21:
-                        print("BlackJack!!! You Win")
+                        print("Dealer bust!!!You Win")
                         return
                     if self.player.hand_value() > 21:
                         print("Bust!!! Dealer wins.")
